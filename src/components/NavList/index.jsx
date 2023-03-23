@@ -1,15 +1,21 @@
+import { NavLink } from "react-router-dom"
+import "./NavList.module.css"
 
 
 
-export const NavList = ({ listNav, className }) => {
+export const NavList = ({ listLink, }) => {
 
     return (
-        <ul className={className}>
-            {listNav.map((nav, id) =>
-                <li key={id}>
-
+        <ul >
+            {listLink.map((nav, index) =>
+                <li key={index}>
+                    <NavLink
+                        className={({ isActive }) => isActive ? 'active' : ''}
+                        to={nav.link}>{nav.name}
+                    </NavLink>
                 </li>
-            )}
-        </ul>
+            )
+            }
+        </ul >
     )
 }

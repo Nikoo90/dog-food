@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { TOKEN, URL } from "../../constans/url"
-import { CardList } from "../../components/CardsProductsList"
+import { CardsProductsList } from "../../components/CardsProductsList"
 import style from "./Main.module.css"
+import { Filter } from "../../components/Filter"
 
 export const Main = () => {
     const [food, setFood] = useState([])
@@ -22,8 +23,12 @@ export const Main = () => {
 
     return (
         <main className={style.main}>
-            <div className={[style['card-list'], 'wrapper'].join(" ")}>
-                <CardList listFood={food} />
+
+            <div className='wrapper'>
+                <Filter />
+                <div className={style['card-list']}>
+                    <CardsProductsList listFood={food} />
+                </div>
             </div>
         </main>
     )

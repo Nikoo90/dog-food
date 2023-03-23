@@ -1,6 +1,6 @@
 import { Card } from "../CardProduct"
 
-export const CardList = ({ listFood }) => {
+export const CardsProductsList = ({ listFood }) => {
 
     return (
         <>
