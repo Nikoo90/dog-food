@@ -1,0 +1,18 @@
+.footer{
+    background-color: var(--yellow);
+}
+.footer_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 0;
+}
+.footer_logo{
+    font-size: 35px;
+    font-weight: bold;
+}
+.footer_logo>p{
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--gray);
+}
