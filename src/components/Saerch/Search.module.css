@@ -1,0 +1,29 @@
+
+.search-container {
+    grid-column: span 2;
+    position: relative;
+}
+.search { 
+    width: 100%; 
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 13px;
+    padding: 15px 20px;
+    position: relative;
+    outline: none;
+    font-size: 15px;
+
+
+}
+
+.search::placeholder{
+    color: rgb(205, 217, 220);
+}
+.button{
+    position: absolute;
+    top:15px;
+    right: 25px;
+  
+    color: rgb(206, 217, 220);;
+}

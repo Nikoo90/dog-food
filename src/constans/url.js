@@ -1,0 +1,2 @@
+export const URL = 'https://api.react-learning.ru/products'
+export const TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEwN2UwOGFhMzk3MTIxODM4ZjI4Y2UiLCJncm91cCI6Imdyb3VwLTExIiwiaWF0IjoxNjc4ODAyNDQ1LCJleHAiOjE3MTAzMzg0NDV9.n59AUB01viv-O31nhnkzjHxdh42wEHFm6OpaQViX3A4'

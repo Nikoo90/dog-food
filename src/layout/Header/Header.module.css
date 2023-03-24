@@ -1,0 +1,14 @@
+.header {
+    background-color:  var(--yellow);
+}
+.header_container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 15px 0;
+    align-items: center;
+
+}
+.logo_title {
+    font-weight: 800;
+    font-size: 25px;
+}
