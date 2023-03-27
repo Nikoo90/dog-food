@@ -1,4 +1,5 @@
-import { NavList } from "../../components/NavList"
+
+import { NavLink } from "react-router-dom"
 import style from "./Footer.module.css"
 
 const listNav = [
@@ -45,7 +46,12 @@ export const Footer = () => {
                     <p>{`© <<Интернет-магазин DogFood.ru>>`}</p>
                 </div>
                 <nav className={style.nav}>
-                    <NavList listLink={listNav} listClass={['aaa']} />
+                    {listNav.map((link, index) =>
+                        <li key={index}>
+                            <NavLink to={link.link}>{
+                                link.name}
+                            </NavLink>
+                        </li>)}
                 </nav>
                 <div className={style.contacts_container}>
                     <p>Мы на связи</p>

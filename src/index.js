@@ -4,12 +4,31 @@ import { createBrowserRouter,
           RouterProvider,
         } from 'react-router-dom';  
 import { App } from './App';
+import { Home } from './pages/Home';
+import { Products } from './pages/Products';
+import { SignIn } from './pages/SignIn';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-  }
+    children:[
+      {
+        index : true,
+        element:<Home />
+      },
+      {
+        path: "/products",
+        element: <Products />
+      },
+      {
+        path:"sign-in",
+        element:<SignIn/>
+      }
+     
+    ]
+  },
+
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

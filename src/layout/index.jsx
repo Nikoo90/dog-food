@@ -1,14 +1,17 @@
-import { Main } from "./Main"
 import { Header } from "./Header"
 import { Footer } from "./Footer"
+import { Outlet } from "react-router-dom"
+import { TokenContextProvider } from "../context/TokenContext"
 
 export const Layout = ({ children }) => {
 
     return (
         <>
-            <Header />
-            <Main />
-            <Footer />
+            <TokenContextProvider>
+                <Header />
+                <Outlet />
+                <Footer />
+            </TokenContextProvider>
         </>
     )
 }
