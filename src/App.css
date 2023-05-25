@@ -22,8 +22,4 @@ button{
   max-width: 1025px;
   margin: 0 auto;
 }
-body{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+

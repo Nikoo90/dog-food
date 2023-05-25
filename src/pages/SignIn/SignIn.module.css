@@ -1,0 +1,57 @@
+.container{
+    width: 100wh;
+    height: 70vh;
+    display: grid;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+.form {
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.input{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 300px;
+    font-size: 19px;
+    background-color: var(--gray);
+}
+.input::placeholder{
+    color: rgb(125, 117, 117);
+    font-weight: 400;
+    letter-spacing: normal;
+    font-size: 19px;
+}
+.input[type="password"]{
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing:5px;
+}
+.container_input{
+    display: flex;
+    gap:10px;
+    align-items: baseline;
+}
+.btn{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 25px;
+    background-color: var(--gray);
+    width: 300px;
+}
+.reg_link{
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+
+.container_input>span{
+    color: red;
+}

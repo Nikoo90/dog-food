@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import style from "./Card.module.css"
 
 export const Card = ({ pictures, id, discount, price, wight, name }) => {
@@ -11,7 +12,9 @@ export const Card = ({ pictures, id, discount, price, wight, name }) => {
     return (
         <div className={style.card}>
             <div className={style.container_img}>
-                <img src={pictures} alt={id} width={100} height={100} />
+                <Link to={`/products/${id}`}>
+                    <img src={pictures} alt={id} width={100} height={100} />
+                </Link>
                 <div className={style.like} onClick={handleClick}>
                     {like
                         ? <i className="fa-solid fa-heart" style={{ color: 'red' }}></i>

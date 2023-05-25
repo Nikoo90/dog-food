@@ -1,14 +1,19 @@
-.nav>ul>li>a {
+.link {
     color: var(--gray);
-    text-decoration: none;
+    text-decoration:none;
+    font-size: 17px;
 }
 
-.nav>ul{
+.list{
     display: flex;
     padding: 20px;
     gap:40px;
     list-style: none;
 }
+.active{
+    color: blue;
+}
+
 
 
 

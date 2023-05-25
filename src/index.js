@@ -4,9 +4,14 @@ import { createBrowserRouter,
           RouterProvider,
         } from 'react-router-dom';  
 import { App } from './App';
+import { PrivateRouter } from './components/PrivateRoute';
+import { Cabinet } from './pages/Cabinet';
 import { Home } from './pages/Home';
+import { Product } from './pages/Product';
 import { Products } from './pages/Products';
+import { Registration } from './pages/Registration';
 import { SignIn } from './pages/SignIn';
+
 
 const router = createBrowserRouter([
   {
@@ -19,11 +24,25 @@ const router = createBrowserRouter([
       },
       {
         path: "/products",
-        element: <Products />
+        element:<PrivateRouter><Products/></PrivateRouter>
+                    
       },
       {
-        path:"sign-in",
+        path: "/products/:id",
+        element:<PrivateRouter><Product/></PrivateRouter>
+                    
+      },
+      {
+        path:"/sign-in",
         element:<SignIn/>
+      },
+      {
+        path:"/cabinet",
+        element:<PrivateRouter><Cabinet/></PrivateRouter>
+      },
+      {
+      path:"/registration",
+      element:<Registration/>
       }
      
     ]

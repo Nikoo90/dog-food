@@ -7,7 +7,8 @@ import { TokenContext } from "../../context/TokenContext"
 import style from "./Header.module.css"
 
 export const Header = () => {
-    const token = useContext(TokenContext)
+
+    const { token } = useContext(TokenContext)
     return (
         <header className={style.header}>
             <div className="wrapper">
@@ -18,7 +19,11 @@ export const Header = () => {
                     <Search />
                     {token
                         ? <Profile />
-                        : <div><Link to="/sing_in">Вход/Регистрация</Link></div>}
+                        : <div className={style.entrance}>
+                            <Link className={style.entrance_link} to="/sign-in">
+                                Вход/Регистрация
+                            </Link>
+                        </div>}
                 </div>
                 <HeaderNav />
             </div>

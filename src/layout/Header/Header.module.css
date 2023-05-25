@@ -12,3 +12,12 @@
     font-weight: 800;
     font-size: 25px;
 }
+
+.entrance_link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+.entrance{
+    justify-self: center;
+}

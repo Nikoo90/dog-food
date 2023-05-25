@@ -4,7 +4,7 @@ export const Filter = () => {
 
     return (
         <div className={style.container}>
-            <button className={style.btn}>Популярные</button>
+            <button className={style.btn} onClick={() => null}>Популярные</button>
             <button className={style.btn}>Новинки</button>
             <button className={style.btn}>Сначала дешевые</button>
             <button className={style.btn}>Сначало дорогие</button>

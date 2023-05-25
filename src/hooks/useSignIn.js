@@ -7,7 +7,10 @@ export const useSignIn = () => {
         if(localStotageToken){
             setToken(()=> localStorage.getItem('token')) 
         }
+        
     }, [])
-    
-    return token
+
+
+
+    return {token, setToken}
 }

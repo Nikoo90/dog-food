@@ -8,7 +8,11 @@
     position: relative;
     height: 200px;
 }
-.container_img>img {
+.container_img>a{
+   height: 100%;
+    display: block;
+}
+.container_img>a>img {
     height: 100%;
     width: 100%;
     object-fit:cover;

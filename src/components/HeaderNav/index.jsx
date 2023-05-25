@@ -21,8 +21,16 @@ export const HeaderNav = () => {
 
     return (
         <nav className={style.nav}>
-            <ul>
-                {listLink.map((link, index) => <li key={index}><NavLink to={link.link}>{link.name}</NavLink></li>
+            <ul className={style.list}>
+                {listLink.map((link, index) =>
+                    <li key={index}>
+                        <NavLink
+                            className={(isActive, isPending) => isPending ? style.active : style.link}
+                            to={link.link}
+                        >
+                            {link.name}
+                        </NavLink>
+                    </li>
                 )}
             </ul>
 
