@@ -26,7 +26,6 @@ export const Product = () => {
         fethData(`${URL}/${id}`)
     }, [token, id])
 
-    console.log(food)
     return (
         <div className={style.container}>
             <div className={style.description} >
